@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamProMedium.eot"); /* IE9 */
+  src: url("../fonts/GothamProMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/GothamProMedium.woff") format("woff"), /* chrome, firefox */
+  url("../fonts/GothamProMedium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("../fonts/GothamProMedium.svg#Gotham Pro Medium") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProRegular.eot"); /* IE9 */
+  src: url("../fonts/GothamProRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/GothamProRegular.woff") format("woff"), /* chrome, firefox */
+  url("../fonts/GothamProRegular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("../fonts/GothamProRegular.svg#Gotham Pro") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,195 @@
+.sneakers {
+  perspective: 1000px;
+  margin: 0 0 135px;
+  height: 380px;
+  .sneakers-wrapper {
+    position: absolute;
+    .sneakers-box {
+      width: 380px;
+      height: 380px;
+      background: #fff;
+      border-radius: 15px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transform-origin: 0 100%;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .suggested {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .sneakers-box__text {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        font-family: $familyMed;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        span {
+          display: block;
+          color: #66b44a;
+        }
+      }
+      .sneakers-box__price {
+        color: $colorTextBlue;
+        font-size: 1.5em;
+        position: absolute;
+        right: 40px;
+        bottom: 28px;
+        padding: 8px 15px;
+        border: 2px solid #d6e3f1;
+        border-radius: 30px;
+        text-decoration: none;
+
+        &__wrapper {
+          position: relative;
+          span {
+            font-family: $familyMed;
+          }
+          p {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 28px 0 0;
+          }
+          i {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .red-line-box {
+            position: absolute;
+            left: 36px;
+            top: 10px;
+            width: 3px;
+            height: 70px;
+            transform: rotate(-115deg);
+            &:after {
+              content: " ";
+              position: absolute;
+              left: 30px;
+              bottom: -6px;
+              height: 70px;
+              width: 3px;
+              background: red;
+              transform-origin: 100% 0;
+              transform: rotateX(90deg);
+              @include anim($dur: 0.5s);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.anim-first {
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(0, 0, 1000px);
+  animation: sneakersAnimFirst 3s linear normal forwards;
+}
+
+@keyframes sneakersAnimFirst {
+  30% {
+    opacity: 1;
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 0);
+  }
+  59% {
+    opacity: 1;
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 0);
+  }
+  60% {
+    transform-origin: 0;
+    transform: scale(0.7) translate3d(0, 0, 120px);
+  }
+  89% {
+    transform-origin: 0;
+    transform: scale(0.7) translate3d(0, 0, 120px);
+  }
+  90% {
+    transform-origin: 0;
+    opacity: 0.6;
+    transform: scale(0.6) translate3d(0, 0, 200px);
+  }
+  100% {
+    transform-origin: 0;
+    opacity: 0.6;
+    transform: scale(0.6) translate3d(0, 0, 200px);
+  }
+}
+
+.anim-second {
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(0, 0, 1000px);
+  animation: sneakersAnimSecond 3s linear 1s normal forwards;
+}
+
+@keyframes sneakersAnimSecond {
+  30% {
+    opacity: 1;
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 0);
+  }
+  59% {
+    opacity: 1;
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 0);
+  }
+  60% {
+    transform-origin: 0;
+    opacity: 0.8;
+    transform: scale(0.8) translate3d(0, 0, 120px);
+  }
+  100% {
+    transform-origin: 0;
+    opacity: 0.8;
+    transform: scale(0.8) translate3d(0, 0, 120px);
+  }
+}
+
+.anim-third {
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(0, 0, 1000px);
+  animation: sneakersAnimThird 3s linear 2s normal forwards;
+}
+
+@keyframes sneakersAnimThird {
+  30% {
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 0);
+  }
+}
+
+.line-first:after {
+  animation: lineAnim 1s linear 1s normal forwards;
+}
+
+.line-second:after {
+  animation: lineAnim 1s linear 2s normal forwards;
+}
+
+.price-anim {
+
+  animation: priceAnim 0.5s linear 3s normal forwards;
+}
+
+@keyframes lineAnim {
+  30% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes priceAnim {
+  30% {
+    transform: scale(2) rotate(-30deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

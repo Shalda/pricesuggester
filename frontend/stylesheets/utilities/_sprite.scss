@@ -1,0 +1,14 @@
+.play, .dollar, .global, .market, .suggested,
+.chrome, .quoters, .basket, .blackstar, .star
+{ display: inline-block; background: url('../images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.play { background-position: -3px -0px; width: 179px; height: 179px; }
+.dollar { background-position: -3px -182px; width: 126px; height: 126px; }
+.global { background-position: -3px -311px; width: 126px; height: 126px; }
+.market { background-position: -3px -440px; width: 125px; height: 126px; }
+.suggested { background-position: -3px -569px; width: 99px; height: 99px; }
+.chrome { background-position: -105px -569px; width: 49px; height: 52px; }
+.quoters { background-position: -132px -182px; width: 32px; height: 20px; }
+.basket { background-position: -132px -205px; width: 22px; height: 22px; }
+.blackstar { background-position: -157px -205px; width: 19px; height: 18px; }
+.star { background-position: -157px -226px; width: 19px; height: 18px; }
